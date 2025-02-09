@@ -68,6 +68,7 @@ func Download(client *torrent.Client, tor string) error {
 
 	if client.WaitAll() {
 		pterm.Success.Printf("Downloaded: %s\n", t.Name())
+		os.Exit(0)
 		SeedProgress(t)
 		return nil
 	} else {
