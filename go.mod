@@ -1,4 +1,4 @@
-module github.com/sweetbbak/tget
+module github.com/tor302761/tget
 
 go 1.21.7
 
